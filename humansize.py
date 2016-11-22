@@ -2,7 +2,7 @@ SUFFIXES = {1000: ['KB', 'MB', 'GB', 'TB', 'PB', 'ZB', 'YB'],
             1024: ['KiB', 'MiB', 'GiB', 'TiB', 'PiB', 'ZiB', 'YiB']}
 
 
-def approxiamte_size(size, a_kilobyte_is_1014_bytes=True):
+def approximate_size(size, a_kilobyte_is_1014_bytes=True):
     '''Convert a file size to human-readable form.
 
     Keyword arguments:
@@ -25,5 +25,5 @@ def approxiamte_size(size, a_kilobyte_is_1014_bytes=True):
 
 
 if __name__ == '__main__':
-    print(approxiamte_size(1000000000000, False))
-    print(approxiamte_size(1000000000000))
+    print(approximate_size(1000000000000, False))
+    print(approximate_size(1000000000000))
